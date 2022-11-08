@@ -13,7 +13,7 @@ msg += "\n >> " # 반복문이 다 끝나면 문자열 msg에 문자열 연결 �
 more = True # 변수 more에 True 대입
 total = 0 # 변수 total에 0 대입
 
-while more: # 변수 more이 True이면 반복
+while more: # 변수 more이 True이면 반복, more == True가 더 좋은 코드이다.
     instr = input(msg) # 변수 instr에 표준 입력 함수 input() 호출하여 입력 안내 메세지 msg 출력 동시에 사용자로부터 입력받은 문자열 리턴하여 대입
     if instr.count(" ") > 0: # 만약 문자열 instr이 " "가 0보다 크면, 즉 사용자가 입력한 정수가 2개이면
         order, cnt = instr.split() # 문자열 instr의 메소드 split() 호출하여 공백을 구분자로 하여 분리된 문자열 리스트를 변수 order, cnt에 각각 대입
